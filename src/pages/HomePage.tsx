@@ -1,17 +1,21 @@
 import React from "react";
 
-import Index from "../components/Accordion";
+import Accordion from "../components/Accordion";
+
+// The Accordion component is a stateful component.
+// It has a prop, title, which is a string.
+// It has a children prop, which is a React element for composition.
 
 const HomePage = () => {
   return (
     <div>
       <h1>News Page</h1>
       {accordionData.map((p) => (
-        <Index key={p.title} title={p.title}>
+        <Accordion key={p.title} title={p.title}>
           <div style={{ backgroundColor: p.color, padding: "1rem" }}>
             {p.content}
           </div>
-        </Index>
+        </Accordion>
       ))}
     </div>
   );
@@ -25,6 +29,7 @@ type Post = {
   color: string;
 };
 
+// sample data
 export const accordionData: Post[] = [
   {
     title: "Section 1",

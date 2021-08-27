@@ -7,6 +7,7 @@ type Props = {
   fill: string;
 };
 
+// Partial means that the props can have some of the values
 const ChevronIcon = ({ className, height, width, fill }: Partial<Props>) => (
   <svg
     className={className}
