@@ -15,6 +15,7 @@ const HomePage = () => {
           <div style={{ backgroundColor: p.color, padding: "1rem" }}>
             {p.content}
           </div>
+          <img src={p.photo} alt={p.title} />
         </Accordion>
       ))}
     </div>
@@ -27,6 +28,7 @@ type Post = {
   title: string;
   content: string;
   color: string;
+  photo: string;
 };
 
 // sample data
@@ -38,6 +40,7 @@ export const accordionData: Post[] = [
     suscipit commodi eum enim atque at? Et perspiciatis dolore iure
     voluptatem.`,
     color: "dodgerblue",
+    photo: "https://via.placeholder.com/300"
   },
   {
     title: "Section 2",
@@ -48,6 +51,7 @@ export const accordionData: Post[] = [
     quidem maiores doloremque est numquam praesentium eos voluptatem amet!
     Repudiandae, mollitia id reprehenderit a ab odit!`,
     color: "gold",
+        photo: "https://via.placeholder.com/300"
   },
   {
     title: "Section 3",
@@ -55,5 +59,6 @@ export const accordionData: Post[] = [
     quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
     dolor ut sequi minus iste? Quas?`,
     color: "pink",
+        photo: "https://via.placeholder.com/250"
   },
 ];
