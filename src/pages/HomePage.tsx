@@ -59,6 +59,6 @@ export const accordionData: Post[] = [
     quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
     dolor ut sequi minus iste? Quas?`,
     color: "pink",
-        photo: "https://via.placeholder.com/250"
+        photo: "https://via.placeholder.com/300"
   },
 ];
